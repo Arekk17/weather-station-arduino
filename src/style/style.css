@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  box-sizing: border-box;
+  background-image: url(../assets/vecteezy_beautiful-blue-and-golden-sky-and-clouds-abstract_7773672-_2_.webp);
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.weatherwindow {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  border-radius: 50px;
+  width: 80%;
+  background: linear-gradient(
+    0deg,
+    rgba(24, 200, 171, 0.712) 34%,
+    rgba(16, 213, 209, 1) 100%
+  );
+  text-align: center;
+  padding: auto;
+}
+
+h1 {
+  font-size: 2.3em;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 30px;
+}
+
+.container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  justify-content: center;
+  box-shadow: 1px 1px 10px black;
+  border: 1px solid black;
+  color: white;
+  width: 150px;
+  height: 200px;
+  text-align: center;
+}
+
+.container div > * {
+  margin: 5px 0;
+}
+
+.container img {
+  filter: invert(1);
+}
+
+.container h2,
+.container p {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
