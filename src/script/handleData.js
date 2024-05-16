@@ -1,4 +1,3 @@
-// src/script/handleData.js
 import {
   ref,
   onValue,
@@ -11,6 +10,7 @@ onValue(sensorRef, (snapshot) => {
   if (data) {
     const altitude = data.altitude.toFixed(2);
     const pressure = data.pressure.toFixed(2);
+    const lightLevel = data.lightLevel.toFixed(2);
 
     document.getElementById("temperature").textContent =
       `${data.temperature.toFixed(2)} °C` || "N/A";
@@ -21,6 +21,6 @@ onValue(sensorRef, (snapshot) => {
     document.getElementById("pressure").textContent =
       `${pressure} hPa` || "N/A";
     document.getElementById("lightIntensity").textContent =
-      `${data.lightIntensity} lux` || "N/A";
+      `${lightLevel} lux` || "N/A";
   }
 });
